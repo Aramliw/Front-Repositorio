@@ -1,0 +1,36 @@
+
+<div class="p-4">
+    <h1>Jumbotron Example</h1>
+    <p>Lorem ipsum... Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deleniti eligendi repellat earum
+        mollitia aliquam omnis molestias, facilis accusamus voluptates, unde commodi inventore eveniet delectus cum
+        dolore nobis nemo voluptatem.</p>
+  </div>
+  
+  <div class="card">
+    <div class="card-header">Lista de arquivos</div>
+    <div class="card-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Categoria</th>
+                    <th>Data</th>
+                    <th>Adicionado por</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of dados">
+                    <td>{{item.nome}}</td>
+                    <td>{{item.categoria}}</td>
+                    <td>{{item.data}}</td>
+                    <td>{{item.adicionadopor}}</td>
+                    <td>
+                        <a href="#" >Baixar</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer">Footer</div>
+</div>
